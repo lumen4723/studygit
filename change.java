@@ -10,6 +10,23 @@ public class change {
         System.out.println("정렬 후 b : " + Arrays.toString(b));
 
         // 상배가 이진탐색 함수를 제작하고 b에서 3의 인덱스를 찾으시오.
+        
+        System.out.println(BinarySort(b));
+    }
+    
+    static int BinarySort(int n[]) {
+    	
+    	int top = 0;
+    	int bot = n.length - 1;
+    	
+    	while(top <= bot) {
+    		int mid = (top + bot) / 2;
+    		if(n[mid] == 3) return mid;
+    		else if(n[mid] > 3) bot=mid-1;
+    		else if(n[mid] < 3) top=mid+1;
+    	}
+    	return -1;
+    	
     }
     public static int[] bublesort(int a[]){
         for(int i = 0; i < a.length-1; i++){
