@@ -1,4 +1,4 @@
-public change {
+public class change {
     public static void main(String[] args) {
         int[] a = {6, 5, 3, 9, 8, 7, 1, 2, 4};
         // 상훈이가 버블소트함수를 제작하고 정렬전 a와 정렬후 b를 출력하시오.
