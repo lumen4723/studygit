@@ -14,7 +14,7 @@ public class change {
     public static int[] bublesort(int a[]){
         for(int i = 0; i < a.length-1; i++){
             int temp = 0;
-            for(int j = 0; j < a.length-1; j++){
+            for(int j = 0; j < a.length-1-i; j++){
                 if(a[j] > a[j+1]){
                     temp = a[j];
                     a[j] = a[j+1];
